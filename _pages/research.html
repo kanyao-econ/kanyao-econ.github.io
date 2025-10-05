@@ -1,0 +1,96 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+<!-- <p><i>Coming soon.</i></p> -->
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<style>
+.abstract-toggle {
+  cursor: pointer;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.abstract-toggle:hover {
+  color: #3498db;
+}
+
+.abstract-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.abstract-content.show {
+  display: block;
+}
+
+.paper-item {
+  margin-bottom: 20px;
+}
+
+.paper-item h3 {
+  margin-bottom: 5px;
+}
+
+.paper-item p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+</style>
+
+<h2>Job Market Paper</h2>
+<hr />
+
+<div class="paper-item">
+  <h3>Title of Working Paper</h3>
+  <span class="abstract-toggle" onclick="toggleAbstract('abstract1')">
+    <i class="fas fa-caret-right" id="arrow1"></i> Abstract
+  </span>
+  <div class="abstract-content" id="abstract1">
+    <p>This is the abstract for the working paper. It provides a brief overview of the research question, methodology, and key findings. The abstract explains the motivation behind the study and its contribution to the field of economics.</p>
+  </div>
+</div>
+
+<h2>Work in Progress</h2>
+<hr />
+
+<div class="paper-item">
+  <h3>GMM Estimation of High-Dimensional Panels</h3>
+  <span class="abstract-toggle" onclick="toggleAbstract('abstract2')">
+    <i class="fas fa-caret-right" id="arrow2"></i> Abstract
+  </span>
+  <div class="abstract-content" id="abstract2">
+    <p>In this paper, I develop a general framework for high-dimensional panel data models characterized by moment restrictions and interactive fixed effects. The framework allows both the number of parameters and the number of moment conditions to grow with the sample size, encompassing a broad class of linear and nonlinear specifications. I focus on settings with many covariates, among which only a small subset has a nonzero impact on the parameters of interest, and unobserved heterogeneity is captured by a low-rank component structured through latent factors and their loadings. This structure poses challenges for conventional sparse estimators such as Lasso, and for standard factor estimators like PCA. To address these issues, I propose a new generalized method of moments (GMM) procedure that combines l_1and nuclear-norm penalties. Under general conditions, I show that the proposed estimator consistently recovers both the nonzero coefficients and the latent low-rank matrix in the presence of many moments. The findings contribute to the econometric literature by providing a practical solution for high-dimensional panel data models, ensuring both theoretical consistency and computational feasibility.</p>
+  </div>
+</div>
+
+<div class="paper-item">
+  <h3>Measuring Inflation Inequality with Incomplete Prices</h3>
+  <p>with Olivia Ding and Tianyu Fan</p>
+</div>
+
+<script>
+function toggleAbstract(abstractId) {
+  const abstract = document.getElementById(abstractId);
+  const arrowId = abstractId.replace('abstract', 'arrow');
+  const arrow = document.getElementById(arrowId);
+  
+  if (abstract.classList.contains('show')) {
+    abstract.classList.remove('show');
+    arrow.style.transform = 'rotate(0deg)';
+  } else {
+    abstract.classList.add('show');
+    arrow.style.transform = 'rotate(180deg)';
+  }
+}
+</script>

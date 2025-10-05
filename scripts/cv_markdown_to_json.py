@@ -249,7 +249,7 @@ def parse_skills(skills_text):
     return skills_entries
 
 def parse_publications(pub_dir):
-    """Parse publications from the _publications directory."""
+    """Parse publications from the _research directory."""
     publications = []
     
     if not os.path.exists(pub_dir):
