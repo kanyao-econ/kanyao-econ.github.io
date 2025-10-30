@@ -5,8 +5,6 @@ permalink: /research/
 author_profile: true
 ---
 
-<!-- <p><i>Coming soon.</i></p> -->
-
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
@@ -52,12 +50,12 @@ author_profile: true
 <hr />
 
 <div class="paper-item">
-  <h3>Title of Working Paper</h3>
+  <h3>Low-Rank Estimation of Nonlinear Panel Data Models </h3>
   <span class="abstract-toggle" onclick="toggleAbstract('abstract1')">
     <i class="fas fa-caret-right" id="arrow1"></i> Abstract
   </span>
   <div class="abstract-content" id="abstract1">
-    <p>This is the abstract for the working paper. It provides a brief overview of the research question, methodology, and key findings. The abstract explains the motivation behind the study and its contribution to the field of economics.</p>
+    <p>This paper investigates nonlinear panel regression models with interactive fixed effects and introduces a general framework for parameter estimation under potentially non-convex objective functions. I propose a computationally feasible two-step estimation procedure. In the first step, I use nuclear-norm regularization (NNR) to obtain preliminary estimators of the coefficients of interest, factors, and factor loadings. The second step involves an iterative procedure for post-NNR inference, improving the convergence rate of the coefficient estimator. I establish the asymptotic properties of both the preliminary and iterative estimators. I also study the determination of the number of factors. Monte Carlo simulations demonstrate the effectiveness of the proposed methods in determining the number of factors and estimating the model parameters. In my empirical application, I apply the proposed approach to study the cross-market arbitrage behavior of U.S. nonfinancial firms.</p>
   </div>
 </div>
 
@@ -70,7 +68,7 @@ author_profile: true
     <i class="fas fa-caret-right" id="arrow2"></i> Abstract
   </span>
   <div class="abstract-content" id="abstract2">
-    <p>In this paper, I develop a general framework for high-dimensional panel data models characterized by moment restrictions and interactive fixed effects. The framework allows both the number of parameters and the number of moment conditions to grow with the sample size, encompassing a broad class of linear and nonlinear specifications. I focus on settings with many covariates, among which only a small subset has a nonzero impact on the parameters of interest, and unobserved heterogeneity is captured by a low-rank component structured through latent factors and their loadings. This structure poses challenges for conventional sparse estimators such as Lasso, and for standard factor estimators like PCA. To address these issues, I propose a new generalized method of moments (GMM) procedure that combines l_1and nuclear-norm penalties. Under general conditions, I show that the proposed estimator consistently recovers both the nonzero coefficients and the latent low-rank matrix in the presence of many moments. The findings contribute to the econometric literature by providing a practical solution for high-dimensional panel data models, ensuring both theoretical consistency and computational feasibility.</p>
+    <p>In this paper, I develop a general framework for high-dimensional panel data models characterized by moment restrictions and interactive fixed effects. The framework allows both the number of parameters and the number of moment conditions to grow with the sample size, encompassing a broad class of linear and nonlinear specifications. I focus on settings with many covariates, among which only a small subset has a nonzero impact on the parameters of interest, and unobserved heterogeneity is captured by a low-rank component structured through latent factors and their loadings. This structure poses challenges for conventional sparse estimators such as Lasso, and for standard factor estimators like PCA. To address these issues, I propose a new generalized method of moments (GMM) procedure that combines &ell;<sub>1</sub> and nuclear-norm penalties. Under general conditions, the proposed estimator consistently recovers both the nonzero coefficients and the latent low-rank matrix in the presence of many moments. Monte Carlo simulations demonstrate good finite-sample performance. </p>
   </div>
 </div>
 
