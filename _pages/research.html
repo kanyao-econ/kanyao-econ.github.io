@@ -16,7 +16,7 @@ author_profile: true
   cursor: pointer;
   color: #2c3e50;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0;  /* No indentation - align with title */
 }
 
 .abstract-toggle:hover {
@@ -26,6 +26,7 @@ author_profile: true
 .abstract-content {
   display: none;
   margin-top: 10px;
+  margin-left: 0;  /* No indentation - align with title */
   text-align: justify;
   max-width: 80%;  /* Reduce width to make text wrap earlier */
   font-size: 0.9em;  /* Reduce font size by 1 size */
@@ -45,7 +46,11 @@ author_profile: true
 
 .paper-item p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;  /* Reduced spacing */
+}
+
+.paper-item p + .abstract-toggle {
+  margin-top: 5px;  /* Reduced spacing between draft coming soon and abstract */
 }
 </style>
 
