@@ -26,7 +26,7 @@ author:
   avatar           : "temp5.jpg"
   name             : "Kan Yao"
   pronouns         : # example: "she/her"  
-  bio              : " "
+  bio              : # "Ph.D. Candidate, Yale University"
   location         : "San Francisco, California"
   employer         : # "Yale University"
   uri              : # URL

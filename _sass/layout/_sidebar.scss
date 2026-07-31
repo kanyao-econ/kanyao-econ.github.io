@@ -127,6 +127,12 @@
     margin-bottom: 10px;
   }
 }
+
+.author__content + .author__urls-wrapper {
+  @include breakpoint($large) {
+    margin-top: 1rem;
+  }
+}
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
